@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://egm.dev"><img src="docs/assets/readme-header.svg" width="480" height="116" alt="Elephant-Goldfish Model"></a>
+  <a href="https://github.com/RustyDrops/elephant-goldfish-dining"><img src="docs/assets/readme-header.svg" width="480" height="116" alt="Elephant-Goldfish Dining"></a>
 </p>
 
 <p align="center">Design with an elephant. Review with a goldfish.</p>
@@ -8,7 +8,7 @@
   <a href="#install">Install</a> &ensp;·&ensp;
   <a href="#try-your-first-design">Quickstart</a> &ensp;·&ensp;
   <a href="docs/getting_started.md">Documentation</a> &ensp;·&ensp;
-  <a href="https://egm.dev">Website</a>
+  <a href="https://github.com/RustyDrops/elephant-goldfish-dining">Website</a>
 </p>
 
 <br>
@@ -154,3 +154,4 @@ Read [contributing](https://github.com/google/elephant-goldfish-model/blob/main/
 ## License
 
 [Apache 2.0](LICENSE). This is not an officially supported Google product.
+

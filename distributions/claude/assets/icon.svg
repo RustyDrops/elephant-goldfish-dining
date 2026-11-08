@@ -1,6 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="1.5 1.5 21 21" width="64" height="64">
-  <!-- Copyright 2026 Google LLC. SPDX-License-Identifier: Apache-2.0 -->
-  <!-- Existing site favicon geometry, with fixed colors for plugin renderers. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="1.5 1.5 21 21" width="64" height="64" role="img" aria-labelledby="title">
+  <title id="title">Elephant-Goldfish Dining</title>
   <g fill="#1b6ef3" stroke="#1b6ef3" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
     <path stroke="none" d="M10.30,6.80 A5.20,5.20 0 0 0 10.30,17.20 A1.20,1.20 0 0 0 11.50,16.00 L11.50,8.00 A1.20,1.20 0 0 0 10.30,6.80Z"/>
     <path fill="none" d="M7.20,12.00 C6.80,14.60 3.40,14.70 3.20,12.60 C3.10,11.20 3.30,10.20 3.60,9.40"/>
@@ -8,5 +7,14 @@
   <g fill="#e86e00" stroke="#e86e00" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
     <path stroke="none" d="M13.70,6.80 A5.20,5.20 0 0 1 13.70,17.20 A1.20,1.20 0 0 1 12.50,16.00 L12.50,8.00 A1.20,1.20 0 0 1 13.70,6.80Z"/>
     <path fill="none" d="M16.80,12.00 L18.00,12.00 C18.80,12.00 19.40,10.60 20.90,9.40 M18.00,12.00 C18.80,12.00 19.40,13.40 20.90,14.60"/>
+  </g>
+  <g stroke="#9b4c1b" stroke-width=".65" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M9.45 10.35 11.05 9.1 12 10.1 12.95 9.1 14.55 10.35 12 11.25Z" fill="#fff4e5"/>
+    <path d="M9.7 10.65 Q12 11.65 14.3 10.65 L13.85 16.2 Q12 17.1 10.15 16.2Z" fill="#fffaf1"/>
+    <path d="M9.55 10.45 Q12 11.5 14.45 10.45" fill="none"/>
+    <path d="M12 11.3 12 16.55" fill="none" stroke="#e6b482" stroke-width=".45"/>
+  </g>
+  <g fill="none" stroke="#9b4c1b" stroke-width=".65" stroke-linecap="round">
+    <path d="m13.55 9.05 2.25-3.1 M14.35 9.15 16.7 5.95"/>
   </g>
 </svg>
