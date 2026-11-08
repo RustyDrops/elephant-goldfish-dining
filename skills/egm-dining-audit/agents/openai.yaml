@@ -1,0 +1,6 @@
+interface:
+  display_name: "Dining Audit"
+  short_description: "Challenge hours, parking, and the backup plan"
+  icon_small: "./assets/icon.svg"
+  icon_large: "./assets/icon.svg"
+  brand_color: "#E86E00"

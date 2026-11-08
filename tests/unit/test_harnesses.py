@@ -24,7 +24,8 @@ MARKETPLACES = (
 )
 EXPECTED_SKILLS = {
     "egm-bootstrap", "egm-brainstorm", "egm-draft", "egm-drift-report",
-    "egm-resolve", "egm-review", "egm-review-loop",
+    "egm-dining-scout", "egm-dining-audit", "egm-resolve", "egm-review",
+    "egm-review-loop",
 }
 REVIEWERS = (
     "codebase_details", "comprehension", "design_critic",
@@ -66,7 +67,7 @@ def test_portable_manifest_schema() -> None:
   manifest = read_json("plugin.json")
   assert re.fullmatch(NAME_RE, manifest["name"])
   assert re.fullmatch(r"\d+\.\d+\.\d+", manifest["version"])
-  assert manifest["displayName"] == "Elephant-Goldfish Model"
+  assert manifest["displayName"] == "Elephant-Goldfish Dining"
   assert manifest["logo"] == "assets/icon.svg"
   assert (ROOT / manifest["logo"]).is_file()
 

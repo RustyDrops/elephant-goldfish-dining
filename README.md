@@ -15,6 +15,24 @@
 
 Develop ideas with context and review documents with fresh eyes. EGM is an open-source plugin for AI assistants.
 
+This fork adds a restaurant-picking protocol for undecided couples. The Dining
+Elephant uses Google Maps evidence to pick one place and a backup; fresh Hungry
+Goldfish reviewers try to find the reason dinner will go sideways. It is a
+comedic decision aid, not a relationship diagnostic. The upstream EGM project
+is by Google; this fork is independently maintained and is not an official
+Google product.
+
+## Pick a restaurant
+
+Use `egm-dining-scout` to gather the diners' constraints and search Google Maps
+through its Maps Experience agent tools MCP integration. It presents one
+recommendation and a backup, then `egm-dining-audit` dispatches isolated
+reviewers. Setup, billing tiers, and evidence limits are in [the dining
+guide](docs/dining.md).
+
+The comedy is in the tie-breaker, not the facts. Hours, reviews, waits, menu
+prices, and parking are reported only when the connected source supports them.
+
 **Elephant** holds your project context and drafts the specification. **Goldfish** reviewers examine the draft and referenced source material without the earlier conversation, helping expose unstated assumptions and blind spots. **You** make the architectural trade-offs and approve the specification before implementing.
 
 The built-in draft and design-review workflow targets software specifications. For other documents, choose reviewers and standards with `/egm-review-loop`. Bootstrap and drift reporting apply to software codebases.
@@ -25,12 +43,13 @@ Choose your coding agent. Install the complete plugin so its skills can read the
 
 ### ChatGPT and Codex desktop
 
-Open the [published EGM plugin](https://chatgpt.com/plugins/plugins_6aeb90f47ec88191a3c107e01d3eb357) in the desktop app and install it. This listing is desktop-only. For Codex CLI, use the commands below.
+For the fork's skills, install from this repository. This fork does not have a
+separate published desktop listing. For Codex CLI, use the commands below.
 
 ### Antigravity CLI
 
 ```sh
-agy plugin install https://github.com/google/elephant-goldfish-model
+agy plugin install https://github.com/RustyDrops/elephant-goldfish-dining
 ```
 
 For the **Antigravity App** and **Antigravity for IDEs** (Visual Studio Code extension), run `/plugin` or see the [installation instructions](docs/harnesses.md#antigravity-app-and-antigravity-for-ides).
@@ -38,18 +57,20 @@ For the **Antigravity App** and **Antigravity for IDEs** (Visual Studio Code ext
 ### Claude Code
 
 ```sh
-claude plugin marketplace add google/elephant-goldfish-model
+claude plugin marketplace add RustyDrops/elephant-goldfish-dining
 claude plugin install egm@egm
 ```
 
 ### Codex CLI
 
 ```sh
-codex plugin marketplace add google/elephant-goldfish-model
+codex plugin marketplace add RustyDrops/elephant-goldfish-dining
 codex plugin add egm@egm
 ```
 
-Start a new session after installation. For **Claude Cowork** and **ChatGPT Work**, see the [setup guide](docs/harnesses.md).
+Start a new session after installation. The fork-specific restaurant workflow is
+documented in [docs/dining.md](docs/dining.md). For **Claude Cowork** and
+**ChatGPT Work**, see the upstream-compatible [setup guide](docs/harnesses.md).
 
 ## Try your first design
 

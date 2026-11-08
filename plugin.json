@@ -1,35 +1,35 @@
 {
   "name": "egm",
-  "displayName": "Elephant-Goldfish Model",
+  "displayName": "Elephant-Goldfish Dining",
   "version": "0.1.1",
-  "description": "Develop ideas with context and review documents with fresh eyes.",
+  "description": "Use Google Maps evidence and fresh Goldfish reviewers to choose a restaurant.",
   "author": {
-    "name": "Google"
+    "name": "RustyDrops"
   },
-  "homepage": "https://egm.dev",
-  "repository": "https://github.com/google/elephant-goldfish-model",
+  "homepage": "https://github.com/RustyDrops/elephant-goldfish-dining",
+  "repository": "https://github.com/RustyDrops/elephant-goldfish-dining",
   "license": "Apache-2.0",
   "logo": "assets/icon.svg",
   "extensions": {
     "com.openai": {
       "requires_local_executor": true,
       "interface": {
-        "displayName": "Elephant-Goldfish Model",
-        "shortDescription": "Develop ideas and review plans",
-        "longDescription": "Develop an idea, improve a plan, or review a document with independent AI reviewers. Reviewers start without the earlier conversation to help spot missing context, unclear reasoning, and hidden assumptions. Use it to challenge proposals and project plans. For software work, draft design documents, document a codebase, and check whether code matches a design. You decide which changes to make. Reviews require a local executor and isolated subagents. Cloud support remains partial. Not an officially supported Google product.",
-        "developerName": "Google",
+        "displayName": "Elephant-Goldfish Dining",
+        "shortDescription": "Choose a restaurant with Maps",
+        "longDescription": "Help undecided diners choose one restaurant and a backup using Google Maps evidence, then challenge the proposal with fresh, isolated reviewers. Includes the upstream EGM workflows for design and document review. This comedic fork is independently maintained and is not an official Google product. Google Maps data requires a configured API key and may incur usage charges.",
+        "developerName": "RustyDrops",
         "brandColor": "#1B6EF3",
         "category": "Productivity",
-        "capabilities": ["Develop ideas", "Review plans and documents", "Check software against designs"],
+        "capabilities": ["Find restaurant candidates", "Review dining plans", "Use Google Maps evidence"],
         "defaultPrompt": [
-          "Help me turn this idea into a clear plan.",
-          "Review this proposal for gaps and unclear assumptions.",
-          "Review this software design before we build it."
+          "Help us pick a restaurant for tonight with one backup.",
+          "Audit this dining plan for hours, reviews, and parking risks.",
+          "Help me turn this software idea into a clear plan."
         ],
-        "websiteURL": "https://egm.dev",
-        "supportURL": "https://github.com/google/elephant-goldfish-model/issues",
+        "websiteURL": "https://github.com/RustyDrops/elephant-goldfish-dining",
+        "supportURL": "https://github.com/RustyDrops/elephant-goldfish-dining/issues",
         "privacyPolicyURL": "https://policies.google.com/privacy",
-        "termsOfServiceURL": "https://github.com/google/elephant-goldfish-model/blob/main/LICENSE",
+        "termsOfServiceURL": "https://github.com/RustyDrops/elephant-goldfish-dining/blob/main/LICENSE",
         "composerIcon": "./assets/icon.svg",
         "logo": "./assets/icon.svg"
       }

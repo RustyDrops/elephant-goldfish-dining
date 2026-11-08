@@ -1,20 +1,20 @@
 {
   "name": "egm",
-  "displayName": "Elephant-Goldfish Model",
+  "displayName": "Elephant-Goldfish Dining",
   "version": "0.1.1",
-  "description": "Develop ideas with context and review documents with fresh eyes.",
+  "description": "Use Google Maps evidence and fresh Goldfish reviewers to choose a restaurant.",
   "author": {
-    "name": "Google"
+    "name": "RustyDrops"
   },
-  "homepage": "https://egm.dev",
-  "repository": "https://github.com/google/elephant-goldfish-model",
+  "homepage": "https://github.com/RustyDrops/elephant-goldfish-dining",
+  "repository": "https://github.com/RustyDrops/elephant-goldfish-dining",
   "license": "Apache-2.0",
   "keywords": ["spec-driven-development", "design-documents", "design-review"],
   "icon": "./.claude-plugin/icon.png",
-  "documentationUrl": "https://github.com/google/elephant-goldfish-model/blob/main/docs/claude.md",
-  "supportUrl": "https://github.com/google/elephant-goldfish-model/issues",
+  "documentationUrl": "https://github.com/RustyDrops/elephant-goldfish-dining/blob/main/docs/dining.md",
+  "supportUrl": "https://github.com/RustyDrops/elephant-goldfish-dining/issues",
   "privacyPolicyUrl": "https://policies.google.com/privacy",
-  "termsOfServiceUrl": "https://github.com/google/elephant-goldfish-model/blob/main/LICENSE",
+  "termsOfServiceUrl": "https://github.com/RustyDrops/elephant-goldfish-dining/blob/main/LICENSE",
   "agents": [
     "./.claude-plugin/agents/bootstrap_orchestrator.md",
     "./.claude-plugin/agents/codebase_details.md",
@@ -25,6 +25,8 @@
     "./.claude-plugin/agents/structural.md",
     "./.claude-plugin/agents/style.md",
     "./.claude-plugin/agents/synthesizer.md",
-    "./.claude-plugin/agents/zoom_out.md"
+    "./.claude-plugin/agents/zoom_out.md",
+    "./.claude-plugin/agents/egm-hungry-goldfish.md",
+    "./.claude-plugin/agents/egm-logistics-critic.md"
   ]
 }

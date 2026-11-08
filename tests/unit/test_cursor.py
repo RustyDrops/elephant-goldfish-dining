@@ -38,7 +38,7 @@ def test_manifest_selects_native_adapters(installed: Path) -> None:
     for field in ("name", "version", "description", "homepage",
                   "repository", "license"):
         assert manifest[field] == canonical[field]
-    assert manifest["author"] == {"name": "Google"}
+    assert manifest["author"] == {"name": "RustyDrops"}
     assert manifest["skills"] == "./skills/"
     assert manifest["agents"] == "./.cursor-plugin/agents/"
     assert manifest["rules"] == "./.cursor-plugin/rules/"
