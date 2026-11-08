@@ -16,22 +16,21 @@
 Develop ideas with context and review documents with fresh eyes. EGM is an open-source plugin for AI assistants.
 
 This fork adds a restaurant-picking protocol for undecided couples. The Dining
-Elephant uses Google Maps evidence to pick one place and a backup; fresh Hungry
-Goldfish reviewers try to find the reason dinner will go sideways. It is a
-comedic decision aid, not a relationship diagnostic. The upstream EGM project
-is by Google; this fork is independently maintained and is not an official
-Google product.
+Elephant uses built-in web search to pick one place and a backup; fresh Hungry
+Goldfish reviewers try to find the reason dinner will go sideways. No Maps
+MCP, API key, or separate account setup is required. It is a comedic decision
+aid, not a relationship diagnostic. The upstream EGM project is by Google;
+this fork is independently maintained and is not an official Google product.
 
 ## Pick a restaurant
 
-Use `egm-dining-scout` to gather the diners' constraints and search Google Maps
-through its Maps Experience agent tools MCP integration. It presents one
-recommendation and a backup, then `egm-dining-audit` dispatches isolated
-reviewers. Setup, billing tiers, and evidence limits are in [the dining
-guide](docs/dining.md).
+Use `egm-dining-scout` to gather the diners' constraints and search with the
+host's built-in web search. It presents one recommendation and a backup, then
+`egm-dining-audit` dispatches isolated reviewers. If search is unavailable,
+diners can share restaurant names or links. See the [dining guide](docs/dining.md).
 
 The comedy is in the tie-breaker, not the facts. Hours, reviews, waits, menu
-prices, and parking are reported only when the connected source supports them.
+prices, and parking are reported only when cited sources support them.
 
 **Elephant** holds your project context and drafts the specification. **Goldfish** reviewers examine the draft and referenced source material without the earlier conversation, helping expose unstated assumptions and blind spots. **You** make the architectural trade-offs and approve the specification before implementing.
 

@@ -2,7 +2,7 @@
   "name": "egm",
   "displayName": "Elephant-Goldfish Dining",
   "version": "0.1.1",
-  "description": "Use Google Maps evidence and fresh Goldfish reviewers to choose a restaurant.",
+  "description": "Choose a restaurant with built-in web search and fresh Goldfish reviewers. No setup required.",
   "author": {
     "name": "RustyDrops"
   },

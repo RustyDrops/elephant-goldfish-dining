@@ -10,5 +10,6 @@ omitClaudeMd: true
 
 Read `${CLAUDE_PLUGIN_ROOT}/agents/egm-logistics-critic.md` before reviewing.
 Follow that canonical persona. This adapter defines Claude's read-only tool
-and context restrictions. Use only the supplied proposal and Maps evidence.
+and context restrictions. Use only the supplied proposal and linked public
+evidence.
 Do not access chat history or edit files.

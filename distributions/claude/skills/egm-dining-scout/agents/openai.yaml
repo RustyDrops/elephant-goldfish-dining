@@ -1,6 +1,6 @@
 interface:
   display_name: "Dining Scout"
-  short_description: "Pick one dinner spot with Google Maps and fresh reviewers"
+  short_description: "Pick dinner with web search and fresh reviewers"
   icon_small: "./assets/icon.svg"
   icon_large: "./assets/icon.svg"
   brand_color: "#E86E00"

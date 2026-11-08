@@ -2,7 +2,7 @@
   "name": "egm",
   "displayName": "Elephant-Goldfish Dining",
   "version": "0.1.1",
-  "description": "Use Google Maps evidence and fresh Goldfish reviewers to choose a restaurant.",
+  "description": "Choose a restaurant with built-in web search and fresh Goldfish reviewers. No setup required.",
   "author": {
     "name": "RustyDrops"
   },
@@ -15,12 +15,12 @@
       "requires_local_executor": true,
       "interface": {
         "displayName": "Elephant-Goldfish Dining",
-        "shortDescription": "Choose a restaurant with Maps",
-        "longDescription": "Help undecided diners choose one restaurant and a backup using Google Maps evidence, then challenge the proposal with fresh, isolated reviewers. Includes the upstream EGM workflows for design and document review. This comedic fork is independently maintained and is not an official Google product. Google Maps data requires a configured API key and may incur usage charges.",
+        "shortDescription": "Choose dinner with no extra setup",
+        "longDescription": "Help undecided diners choose one restaurant and a backup using the host's built-in web search, then challenge the proposal with fresh, isolated reviewers. No Maps MCP connection, API key, or separate account is required; diners can share restaurant names or links if search is unavailable. Includes the upstream EGM workflows for design and document review. This comedic fork is independently maintained and is not an official Google product.",
         "developerName": "RustyDrops",
         "brandColor": "#1B6EF3",
         "category": "Productivity",
-        "capabilities": ["Find restaurant candidates", "Review dining plans", "Use Google Maps evidence"],
+        "capabilities": ["Find restaurant candidates", "Review dining plans", "Use linked public sources"],
         "defaultPrompt": [
           "Help us pick a restaurant for tonight with one backup.",
           "Audit this dining plan for hours, reviews, and parking risks.",

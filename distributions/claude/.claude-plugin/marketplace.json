@@ -1,0 +1,13 @@
+{
+  "name": "egm",
+  "owner": {
+    "name": "RustyDrops"
+  },
+  "plugins": [
+    {
+      "name": "egm",
+      "source": "./",
+      "description": "Choose a restaurant with built-in web search and fresh Goldfish reviewers. No setup required."
+    }
+  ]
+}

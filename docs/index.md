@@ -4,7 +4,7 @@
 
 | Location | Purpose |
 | --- | --- |
-| [EGM Dining](dining.md) | Google Maps setup, evidence limits, and restaurant selection. |
+| [EGM Dining](dining.md) | No-setup restaurant selection with public web sources. |
 | [Getting started](getting_started.md) and [FAQ](faq.md) | Installation and everyday use. |
 | [Harnesses](harnesses.md), [Claude](claude.md), and [Codex](codex.md) | Host-specific installation and execution. |
 | [Design documents](https://github.com/google/elephant-goldfish-model/blob/main/docs/designs/README.md) | Architecture, workflow rationale, and implementation plans. |
