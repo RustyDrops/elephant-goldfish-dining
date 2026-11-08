@@ -1,5 +1,9 @@
 # egm.dev
 
+This website source and domain are inherited from upstream EGM. The dining
+fork does not publish changes here automatically; see the
+[fork lineage](../docs/upstream.md).
+
 Landing site for the Elephant-Goldfish Model, served at https://egm.dev from
 GitHub Pages.
 
@@ -104,3 +108,4 @@ Run `npm run capture` after any visible change so the committed images stay in s
 `.github/workflows/deploy-site.yml` builds and publishes `dist/` on every push
 to `main` that touches `site/`, and on manual dispatch. `public/CNAME` pins the
 custom domain.
+

@@ -43,7 +43,7 @@ verify the caller-supplied source SHA, Git tag ancestry, or tests. Those checks
 belong to the workflow. Publish only workflow-built candidates after
 exact-artifact checks. Local builds remain diagnostic candidates.
 Exact installed-bundle verification remains tracked in
-[#60](https://github.com/google/elephant-goldfish-model/issues/60).
+upstream [issue #60](https://github.com/google/elephant-goldfish-model/issues/60).
 
 ## Verify downloads
 
@@ -53,8 +53,8 @@ run these commands from that directory:
 ```sh
 sha256sum -c SHA256SUMS
 for archive in egm-claude-*.zip egm-openai-*.zip; do
-  gh attestation verify "$archive" --repo google/elephant-goldfish-model \
-    --signer-workflow google/elephant-goldfish-model/.github/workflows/release.yml \
+  gh attestation verify "$archive" --repo RustyDrops/elephant-goldfish-dining \
+    --signer-workflow RustyDrops/elephant-goldfish-dining/.github/workflows/release.yml \
     --source-ref refs/heads/main || exit 1
 done
 ```
@@ -68,3 +68,4 @@ The provenance identifies the workflow run from `main`. The tagged source checke
 out during that run can be a different commit. Check the release notes for that
 source SHA and inspect the workflow run before publication. Attestations do not
 establish host support or prove that the code is safe.
+

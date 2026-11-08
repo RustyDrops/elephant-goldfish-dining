@@ -16,8 +16,10 @@ SHARED = (
     "skills/*/references/*.json", "agents/*.md", "resources/*.md",
     "resources/document_standards/*.md", "docs/index.md", "docs/getting_started.md",
     "docs/harnesses.md", "docs/claude.md", "docs/codex.md", "docs/faq.md",
-    "docs/privacy.md", "docs/releases.md", "docs/dining.md",
-    "assets/*.svg", "assets/*.png", "docs/assets/*.svg", "docs/assets/*.png",
+    "docs/privacy.md", "docs/releases.md", "docs/dining.md", "docs/muse.md",
+    "docs/upstream.md",
+    "assets/*.svg", "assets/*.png", "assets/*.jpg", "docs/assets/*.svg",
+    "docs/assets/*.png",
 )
 HOST = {
     "claude": (".claude-plugin/plugin.json", ".claude-plugin/icon.png",
@@ -33,6 +35,7 @@ REQUIRED_SHARED = (
     "plugin.json", "LICENSE", "README.md", "assets/icon.svg",
     "docs/index.md", "docs/getting_started.md", "docs/harnesses.md",
     "docs/claude.md", "docs/codex.md", "docs/faq.md", "docs/privacy.md",
+    "docs/upstream.md",
     "resources/README.md", "resources/execution_instructions.md",
     "skills/egm-bootstrap/references/worker-return.schema.json",
     "skills/egm-bootstrap/references/templates.md",
@@ -136,3 +139,4 @@ if __name__ == "__main__":
   runtime, bundle = build(Path(__file__).resolve().parents[1],
                           args.target, args.output)
   print(f"Runtime: {runtime}\nZIP: {bundle}")
+

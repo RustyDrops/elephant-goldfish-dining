@@ -5,14 +5,18 @@ SPDX-License-Identifier: Apache-2.0
 
 # Codex integration
 
+This fork's install commands target `RustyDrops/elephant-goldfish-dining`.
+Historical issue links below refer to the upstream Google repository; see
+[fork lineage](upstream.md).
+
 ## Install and locate the plugin
 
-For the desktop app, install the [published EGM plugin](https://chatgpt.com/plugins/plugins_6aeb90f47ec88191a3c107e01d3eb357). This listing is desktop-only.
+This fork has no separately published desktop listing. For personal testing, package it from this repository using the steps below.
 
 For Codex CLI, install the whole plugin, including its personas and standards:
 
 ```sh
-codex plugin marketplace add google/elephant-goldfish-model
+codex plugin marketplace add RustyDrops/elephant-goldfish-dining
 codex plugin add egm@egm
 ```
 
@@ -73,7 +77,7 @@ parent-only marker and check the actual child result, not the parent's claim.
 
 The `fork_context: false` and `fork_turns: "none"` options concern parent
 conversation turns. They do not prove that Codex excludes host instruction
-files. Issue [#237](https://github.com/google/elephant-goldfish-model/issues/237)
+files. Upstream issue [#237](https://github.com/google/elephant-goldfish-model/issues/237)
 reports that Codex CLI 0.166.0 injected project and user `AGENTS.md` files
 despite `fork_turns: "none"`. Treat instruction-file exclusion as unverified
 unless a separate child-context probe confirms it for the tested host version.
@@ -94,7 +98,7 @@ Do not use `file://` links in Codex chat.
 ## Verification
 
 Run the offline packaging checks with `pytest tests/unit`. The opt-in native
-workflow tests are documented in [TESTING.md](https://github.com/google/elephant-goldfish-model/blob/main/TESTING.md). They require
+workflow tests are documented in [TESTING.md](../TESTING.md). They require
 an authenticated Codex CLI and consume model usage. Installing or discovering
 the plugin alone does not establish end-to-end workflow support.
 
@@ -123,7 +127,7 @@ Keep `.claude-plugin/` outside the OpenAI archive: its agent adapters belong
 to the Claude Code integration. Public directory plugins cannot include hooks.
 
 Enterprise, Business, and Edu workspaces can import the plugin via Admin > Plugins > Add > Import marketplace.
-Set the repository URL to `https://github.com/google/elephant-goldfish-model` and marketplace path to `.agents/plugins`.
+Set the repository URL to `https://github.com/RustyDrops/elephant-goldfish-dining` and marketplace path to `.agents/plugins`.
 Skills are accessible via `@egm` for direct interaction.
 Check the native tools in the current chat before starting a Goldfish review.
 Some ChatGPT Work sessions expose native `spawn_agent` with `fork_turns: "none"`.
@@ -131,3 +135,4 @@ Use the fresh-context instructions above when those tools are available. If
 they are absent, stop and report that isolation is unavailable; never simulate
 reviewers in the parent context. Availability in one Work session does not
 establish support across every ChatGPT mode or account.
+

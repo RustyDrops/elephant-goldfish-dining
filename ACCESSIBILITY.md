@@ -6,8 +6,9 @@ welcome.
 
 ## Scope and goals
 
-This statement covers the repository's documentation, shared skill content,
-and the [EGM website](https://egm.dev).
+This statement covers the documentation and shared skill content in this
+fork. The upstream EGM website at [egm.dev](https://egm.dev) is maintained
+separately and is outside this repository's control.
 
 Our goal for the website is the Web Content Accessibility Guidelines
 [WCAG 2.2 Level AA](https://www.w3.org/TR/WCAG22/).
@@ -47,7 +48,7 @@ replace fixing the underlying barrier.
 
 ## Report an accessibility barrier
 
-Use the [bug report template](https://github.com/google/elephant-goldfish-model/issues/new?template=bug_report.md)
+Use this fork's [bug report template](https://github.com/RustyDrops/elephant-goldfish-dining/issues/new?template=bug_report.md)
 and identify the report as an accessibility issue. Include what you can:
 
 - The page, document, skill, or task affected.
@@ -68,3 +69,4 @@ focus visibility, zoom and reflow, and affected screen reader behavior when
 possible. State any checks that could not be performed. Use automated checks
 alongside manual testing, and provide text alternatives for meaningful images
 and diagrams.
+

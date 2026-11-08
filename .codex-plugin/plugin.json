@@ -25,9 +25,10 @@
     ],
     "websiteURL": "https://github.com/RustyDrops/elephant-goldfish-dining",
     "supportURL": "https://github.com/RustyDrops/elephant-goldfish-dining/issues",
-    "privacyPolicyURL": "https://policies.google.com/privacy",
+    "privacyPolicyURL": "https://github.com/RustyDrops/elephant-goldfish-dining/blob/main/docs/privacy.md",
     "termsOfServiceURL": "https://github.com/RustyDrops/elephant-goldfish-dining/blob/main/LICENSE",
     "composerIcon": "./assets/icon.svg",
     "logo": "./assets/icon.svg"
   }
 }
+

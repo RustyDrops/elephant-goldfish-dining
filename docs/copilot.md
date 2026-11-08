@@ -2,7 +2,7 @@
 
 # GitHub Copilot CLI integration
 
-Experimental adapter for [issue #147](https://github.com/google/elephant-goldfish-model/issues/147).
+Experimental adapter originally tracked in upstream [issue #147](https://github.com/google/elephant-goldfish-model/issues/147).
 Workflow execution and reviewer isolation remain unverified. This guide does
 not establish support for Copilot in VS Code or the cloud agent.
 
@@ -199,3 +199,4 @@ can expose prior findings; fresh context is not a filesystem sandbox.
 - [Official SDK protocol operations](https://github.com/github/copilot-sdk/blob/main/python/copilot/generated/rpc.py)
 
 These references describe capabilities. They are not EGM runtime test evidence.
+

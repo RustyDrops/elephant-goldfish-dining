@@ -7,7 +7,7 @@ SPDX-License-Identifier: Apache-2.0
 
 This adapter targets Cursor local Agent. Installation, workflow, and isolation
 remain unverified. Do not add Cursor to the supported-host table yet.
-See the [design](designs/additional-harnesses.md) and [issue #145](https://github.com/google/elephant-goldfish-model/issues/145).
+See the [design](designs/additional-harnesses.md) and upstream [issue #145](https://github.com/google/elephant-goldfish-model/issues/145).
 
 ## Interface and version
 
@@ -212,3 +212,4 @@ Propose any Grok Bot implementation separately after these checks.
 Disable the local EGM plugin in Cursor.
 Remove only the candidate folder that you created, then reload Cursor.
 Retain workspace artifacts and verification evidence.
+

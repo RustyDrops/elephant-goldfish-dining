@@ -8,19 +8,28 @@
   <a href="#install">Install</a> &ensp;·&ensp;
   <a href="#try-your-first-design">Quickstart</a> &ensp;·&ensp;
   <a href="docs/getting_started.md">Documentation</a> &ensp;·&ensp;
-  <a href="https://github.com/RustyDrops/elephant-goldfish-dining">Website</a>
+  <a href="https://github.com/RustyDrops/elephant-goldfish-dining">Repository</a>
 </p>
 
 <br>
 
 Develop ideas with context and review documents with fresh eyes. EGM is an open-source plugin for AI assistants.
 
+EGM Dining is forked from Google's
+[Elephant-Goldfish Model repository](https://github.com/google/elephant-goldfish-model).
+This independent fork keeps the upstream design and review workflows and adds
+a no-setup restaurant picker. It is not an official Google product. See the
+[fork lineage and documentation notes](docs/upstream.md).
+
 This fork adds a restaurant-picking protocol for undecided couples. The Dining
 Elephant uses built-in web search to pick one place and a backup; fresh Hungry
 Goldfish reviewers try to find the reason dinner will go sideways. No Maps
 MCP, API key, or separate account setup is required. It is a comedic decision
-aid, not a relationship diagnostic. The upstream EGM project is by Google;
-this fork is independently maintained and is not an official Google product.
+aid, not a relationship diagnostic.
+
+<p align="center">
+  <img src="assets/egm-dining-promo-banner.jpg" width="900" alt="EGM Dining: one pick, one backup, and no more ‘I don’t care’ loops." />
+</p>
 
 ## Pick a restaurant
 
@@ -139,18 +148,19 @@ You can use each skill when you need it. You do not have to follow the full sequ
 
 - [Getting started](docs/getting_started.md): the workflow and project layout.
 - [Setup](docs/harnesses.md): installation, agent capabilities, and known limits.
-- [Architecture](https://github.com/google/elephant-goldfish-model/blob/main/docs/designs/architecture.md): how skills and reviewers fit together.
-- [Testing](https://github.com/google/elephant-goldfish-model/blob/main/TESTING.md): checks, execution records, and verification limits.
+- [Architecture](docs/designs/architecture.md): how skills and reviewers fit together.
+- [Testing](TESTING.md): checks, execution records, and verification limits.
 - [Dave Rensin’s original essay](https://medium.com/@drensin/elephants-goldfish-and-the-new-golden-age-of-software-engineering-c33641a48874): the ideas behind EGM.
 
 ## Contribute
 
-See the [accessibility statement](https://github.com/google/elephant-goldfish-model/blob/main/ACCESSIBILITY.md)
+See the [accessibility statement](ACCESSIBILITY.md)
 for accessibility goals, known limits, and how to report barriers.
 
-Read [contributing](https://github.com/google/elephant-goldfish-model/blob/main/CONTRIBUTING.md) for PRs, [issues](https://github.com/google/elephant-goldfish-model/issues) for bugs, and [discussions](https://github.com/google/elephant-goldfish-model/discussions) for questions.
+Read [contributing](CONTRIBUTING.md) for pull requests and use this fork's [issue tracker](https://github.com/RustyDrops/elephant-goldfish-dining/issues) for bugs and questions.
 
 ## License
 
-[Apache 2.0](LICENSE). This is not an officially supported Google product.
+[Apache 2.0](LICENSE). Based on Google's [upstream EGM](https://github.com/google/elephant-goldfish-model); independently maintained and not an officially supported Google product.
+
 

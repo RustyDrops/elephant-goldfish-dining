@@ -1,5 +1,8 @@
 # Harnesses
 
+This fork preserves upstream implementation and test history. Numbered issue
+links below refer to the original Google repository; see [fork lineage](upstream.md).
+
 EGM is one set of skills and personas. This repository serves as the
 plugin source for each supported harness. No harness gets a fork of the skill
 text.
@@ -8,18 +11,18 @@ text.
 
 | Harness | Install |
 | --- | --- |
-| ChatGPT desktop | Install the [published EGM plugin](https://chatgpt.com/plugins/plugins_6aeb90f47ec88191a3c107e01d3eb357) (desktop-only listing); see [packaging](codex.md#test-a-local-package) for personal testing |
-| Codex desktop | Install the [published EGM plugin](https://chatgpt.com/plugins/plugins_6aeb90f47ec88191a3c107e01d3eb357) (desktop-only listing) |
-| Antigravity CLI | `agy plugin install https://github.com/google/elephant-goldfish-model` |
+| ChatGPT desktop | This fork has no published plugin listing; see [local package installation](codex.md#test-a-local-package) |
+| Codex desktop | Install the fork's skills from this repository; this fork has no separate published desktop listing |
+| Antigravity CLI | `agy plugin install https://github.com/RustyDrops/elephant-goldfish-dining` |
 | Antigravity App | Run `/plugin` or see [installation instructions](#antigravity-app-and-antigravity-for-ides) |
 | Antigravity for IDEs | Run `/plugin` or see [installation instructions](#antigravity-app-and-antigravity-for-ides) |
 | Antigravity IDE (standalone) | Not supported; see [installation instructions](#antigravity-app-and-antigravity-for-ides) |
-| Claude Code | `claude plugin marketplace add google/elephant-goldfish-model && claude plugin install egm@egm` |
-| Claude Cowork | Install from claude.ai/plugins or the Cowork plugin panel via marketplace `google/elephant-goldfish-model` |
-| Codex CLI | `codex plugin marketplace add google/elephant-goldfish-model && codex plugin add egm@egm` |
-| ChatGPT workspace import | Admin > Plugins > Add > Import marketplace, repo URL `https://github.com/google/elephant-goldfish-model`, path `.agents/plugins`; cloud review limits still apply |
-| omp | `omp plugin marketplace add google/elephant-goldfish-model && omp plugin install egm@egm` |
-| Muse | `git clone https://github.com/google/elephant-goldfish-model.git && muse plugins install ./elephant-goldfish-model --scope user && muse plugins approve egm` |
+| Claude Code | `claude plugin marketplace add RustyDrops/elephant-goldfish-dining && claude plugin install egm@egm` |
+| Claude Cowork | Install the fork from the Cowork plugin panel using the `RustyDrops/elephant-goldfish-dining` marketplace |
+| Codex CLI | `codex plugin marketplace add RustyDrops/elephant-goldfish-dining && codex plugin add egm@egm` |
+| ChatGPT workspace import | Admin > Plugins > Add > Import marketplace, repo URL `https://github.com/RustyDrops/elephant-goldfish-dining`, path `.agents/plugins`; cloud review limits still apply |
+| omp | `omp plugin marketplace add RustyDrops/elephant-goldfish-dining && omp plugin install egm@egm` |
+| Muse | `git clone https://github.com/RustyDrops/elephant-goldfish-dining.git && muse plugins install ./elephant-goldfish-dining --scope user && muse plugins approve egm` |
 
 Install the whole plugin. Skill-only installers that copy `skills/` alone
 break EGM, because the skills read `agents/` and
@@ -27,8 +30,8 @@ break EGM, because the skills read `agents/` and
 
 ### Antigravity App and Antigravity for IDEs
 
-- **Antigravity App**: Run `/plugin`, ask the agent `Install https://github.com/google/elephant-goldfish-model`, or manually install into `~/.gemini/config/plugins/egm/` using the commands below.
-- **Antigravity for IDEs (Extension for Visual Studio Code)**: Run `/plugin`, ask the agent `Install https://github.com/google/elephant-goldfish-model`, or manually install into `~/.gemini/config/plugins/egm/` using the commands below.
+- **Antigravity App**: Run `/plugin`, ask the agent `Install https://github.com/RustyDrops/elephant-goldfish-dining`, or manually install into `~/.gemini/config/plugins/egm/` using the commands below.
+- **Antigravity for IDEs (Extension for Visual Studio Code)**: Run `/plugin`, ask the agent `Install https://github.com/RustyDrops/elephant-goldfish-dining`, or manually install into `~/.gemini/config/plugins/egm/` using the commands below.
 - **Antigravity IDE (Standalone)**: Not supported at this time. Although the plugin and skills load from `~/.gemini/config/plugins/egm/`, standalone Antigravity IDE (tested on macOS and Linux) does not expose the fresh-context subagent tool (`invoke_subagent`) required for Goldfish reviews (`/egm-brainstorm` and `/egm-review`).
 
 The Antigravity App and Antigravity for IDEs share the global plugin directory
@@ -38,8 +41,8 @@ The Antigravity App and Antigravity for IDEs share the global plugin directory
 remove `~/.gemini/config/plugins/egm` first when updating):
 
 ```sh
-git clone https://github.com/google/elephant-goldfish-model.git
-cd elephant-goldfish-model
+git clone https://github.com/RustyDrops/elephant-goldfish-dining.git
+cd elephant-goldfish-dining
 mkdir -p ~/.gemini/config/plugins/egm
 cp -R plugin.json README.md LICENSE skills agents resources docs assets ~/.gemini/config/plugins/egm/
 ```
@@ -158,9 +161,9 @@ control is verified here for Codex or Antigravity.
 
 **omp** ([#186](https://github.com/google/elephant-goldfish-model/issues/186)) has a working installation path. Skills are invoked as `/skill:egm-<command>` (omp registers one command per skill; it has no `/egm-*` namespace). Community-verified on omp v18.12.6: all seven skills discover and resolve, and all nine reviewer personas register as subagents. End-to-end workflow fixtures are not yet automated for omp.
 
-**Muse** (1.4.14) has a working installation path. `muse plugins validate` reports the plugin valid with all seven skills and all ten agent adapters supported; every agent tool projection is unsupported, so Claude tool allowlists do not restrict Muse reviewers. Install from a local path; `marketplace add` on this repository discovers zero plugins because Muse reads the Codex catalog first. End-to-end workflow fixtures passed on 2026-10-30 (brainstorm, draft, and uninterrupted review with 15 fresh-context reviewers); named `egm/egm-*` agents cannot be spawned in this runtime, so reviewers used the general-purpose fallback reading the installed persona first. See the [Muse guide](https://github.com/google/elephant-goldfish-model/blob/main/docs/muse.md). No skill routes a Muse session to that guide yet ([#252](https://github.com/google/elephant-goldfish-model/issues/252)), so point the session at it.
+**Muse** (1.4.14) has a working installation path. `muse plugins validate` reports the plugin valid with all seven skills and all ten agent adapters supported; every agent tool projection is unsupported, so Claude tool allowlists do not restrict Muse reviewers. Install from a local path; `marketplace add` on this repository discovers zero plugins because Muse reads the Codex catalog first. End-to-end workflow fixtures passed on 2026-10-30 (brainstorm, draft, and uninterrupted review with 15 fresh-context reviewers); named `egm/egm-*` agents cannot be spawned in this runtime, so reviewers used the general-purpose fallback reading the installed persona first. See the [Muse guide](muse.md). No skill routes a Muse session to that guide yet; the related issue number is retained as an upstream historical reference.
 
-See the [harness test record](https://github.com/google/elephant-goldfish-model/blob/main/TESTING.md#harness-test-record) for tested surfaces and limits.
+See the [harness test record](../TESTING.md#harness-test-record) for tested surfaces and limits.
 
 We welcome contributors who want to help verify and expand harness support.
 
@@ -176,4 +179,5 @@ support for another harness:
    (`docs/harnesses.md`).
 3. Verify that `/egm-brainstorm`, `/egm-draft`, and `/egm-review` run end to end,
    and attach verification notes or execution transcripts in your Pull Request description
-   (as outlined in the [Pull Request Template](https://github.com/google/elephant-goldfish-model/blob/main/.github/PULL_REQUEST_TEMPLATE.md)).
+   (as outlined in the [Pull Request Template](../.github/PULL_REQUEST_TEMPLATE.md)).
+

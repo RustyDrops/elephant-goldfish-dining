@@ -13,7 +13,7 @@
   "icon": "./.claude-plugin/icon.png",
   "documentationUrl": "https://github.com/RustyDrops/elephant-goldfish-dining/blob/main/docs/dining.md",
   "supportUrl": "https://github.com/RustyDrops/elephant-goldfish-dining/issues",
-  "privacyPolicyUrl": "https://policies.google.com/privacy",
+  "privacyPolicyUrl": "https://github.com/RustyDrops/elephant-goldfish-dining/blob/main/docs/privacy.md",
   "termsOfServiceUrl": "https://github.com/RustyDrops/elephant-goldfish-dining/blob/main/LICENSE",
   "agents": [
     "./.claude-plugin/agents/bootstrap_orchestrator.md",
@@ -30,3 +30,4 @@
     "./.claude-plugin/agents/egm-logistics-critic.md"
   ]
 }
+

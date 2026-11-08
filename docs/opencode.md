@@ -5,7 +5,7 @@
 This adapter targets OpenCode CLI **1.18.29**, with V1 `task` and `permission` interfaces.
 It does not target V2 `subagent` or `permissions` interfaces.
 Installation checks do not establish workflow or isolation support.
-Maintainer approval, live workflows, and isolation verification remain pending under [#146](https://github.com/google/elephant-goldfish-model/issues/146).
+Maintainer approval, live workflows, and isolation verification were tracked in upstream [issue #146](https://github.com/google/elephant-goldfish-model/issues/146); this fork has not independently verified them.
 The proposed architecture is in [the additional harness design](designs/additional-harnesses.md).
 
 ## Install
@@ -198,3 +198,4 @@ Reviewed on 2026-10-24. The versioned sources define this adapter's interface:
 - [V1 permission evaluator](https://github.com/anomalyco/opencode/blob/v1.18.29/packages/opencode/src/permission/index.ts)
 - [V1 MCP resource permission paths](https://github.com/anomalyco/opencode/blob/v1.18.29/packages/opencode/src/session/tools.ts)
 - [Current official agent guide](https://opencode.ai/docs/agents/)
+
